@@ -1,0 +1,161 @@
+/*--------------------------------------------------------
+----------------------------------------------------------
+HTML genérico del navbar y el footer.
+----------------------------------------------------------
+----------------------------------------------------------*/
+
+
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: rgb(9, 11, 34);
+    color : white;
+    height: 100%;
+    width: 100%;
+
+}
+
+/* -----------Nav Bar-------------- */
+.headerpagina{
+    height: 150px;
+}
+nav{
+    height: 100%;
+    width: 109%;
+    background-color: rgb(1, 2, 14);
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+}
+.kittyimg{
+    justify-content: flex-start;
+    height: 109%;
+    width: 20%;
+}
+
+.logoname{
+    font-family: 'Zen Dots', cursive;
+    justify-content: flex-end;
+    height:100%;
+    margin:0%;
+    width: 10%;
+}
+
+div.labeldepag{
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100%;
+    width: 40%;
+    
+    justify-content: center;
+    align-items: center;
+}
+h1.hometitle{
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 30px;
+    height: 50%;
+    margin: 0%;
+    width: 11%;
+}
+
+/*Buscador*/
+.buscadorito{
+    justify-content: flex-start;
+    height: 100%;
+    width: 15%;
+    overflow: hidden;
+}
+
+form{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+div.busca{
+    display: flex;
+    flex-wrap: wrap;
+}
+div.busca label{
+    justify-content: flex-start;
+}
+div.searchbutton{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 5%;
+}
+div.searchbutton button{
+    width: 40%;
+    justify-content: flex-start;
+}
+
+
+
+/*Opciones*/
+.navoptions{
+    list-style-type: none;
+
+    display: flex;
+    flex-wrap: nowrap;
+
+    margin: 0%;
+    padding: 0%;
+    border: 0%;
+    height: 100%;
+    width: 20%;
+    flex-direction: column;
+}
+.navoptions li{
+    height: 30%;
+    width: 50%;
+    margin: 1% 1% 1% 1%;
+}
+.navoptions li a{
+    color: white;
+    text-decoration: none;
+}
+
+
+/* -----------Footer-------------- */
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    background-color:rgb(1, 2, 14);
+}
+
+ul.footer_names{
+    width: 100%;
+    height: 100%;
+    padding: 0%;
+    margin: 0%;
+
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.jero{
+    flex-direction: row;
+    padding: 1% 1% 1% 1%;
+}
+.fede{
+    flex-direction: row;
+    padding: 1% 1% 1% 1%;
+}
+.oli{
+    flex-direction: row;
+    padding: 1% 1% 1% 1%;
+}
