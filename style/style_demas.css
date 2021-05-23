@@ -1,17 +1,22 @@
 /* css del home */
 header.headerblock{
     margin-top: 10%;
+    margin-left:1%;
     font-size: 45px;
-    width: 100%;
+    width: 90vw;
+    font-family: 'Zen Dots', cursive;
+    color: rgb(29, 175, 233);
 }
 .listablock{
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: center;
-
+    color : rgb(29, 175, 233);
+    margin-left:1%;
     height: 30%;
-    width: 100%;
+    width: 90%;
+    box-sizing: border-box;
 }
 
 .contenedorblock{
@@ -19,6 +24,7 @@ header.headerblock{
     flex-wrap: nowrap;
     flex-direction: column;
     justify-content: space-around;
+    box-sizing: border-box;
 }
 
 .nombreblock{
@@ -35,6 +41,7 @@ header.headerblock{
 
 .pullup{
     margin-top: 15%;
+    margin-left: 45%;
     margin-bottom: 5%;
 }
 
