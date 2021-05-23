@@ -5,14 +5,14 @@ header.headerblock{
     font-size: 45px;
     width: 90vw;
     font-family: 'Zen Dots', cursive;
-    color: rgb(29, 175, 233);
+    color: #21252954;
 }
 .listablock{
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: center;
-    color : rgb(29, 175, 233);
+    color: #21252954;
     margin-left:1%;
     height: 30%;
     width: 90%;
@@ -39,18 +39,14 @@ header.headerblock{
     width: 50%;
 }
 
-.pullup{
-    margin-top: 15%;
-    margin-left: 45%;
-    margin-bottom: 5%;
-}
-
 
 /* css de playlist */
 .headerplay{
     margin-top: 10%;
     margin-bottom: 10%;
     font-size: 45px;
+    font-family: 'Zen Dots', cursive;
+    color: #21252954;
 }
 
 .listaplay{
@@ -58,25 +54,26 @@ header.headerblock{
     flex-wrap: nowrap;
     flex-direction: column;
     align-items: center;
-
     height: 100%;
     width: 100%;
 }
 
 .contenedorplay{
-    margin: 1% 1% 1% 1%;
+    margin: 1% 10% 1% 10%;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    width: 100%;
-    background-color: rgb(3, 6, 51);
-    border: dotted 3px rgb(255, 0, 221);
+    width: 95%;
+    height: 20vh;
+    background-color: rgba(16, 30, 224, 0.192);
+    border: dotted 3px rgba(255, 0, 221, 0.219);
 }
 
 .nombreplay{    
     margin: 0%;
+    margin-left:5%;
     margin-top: 2%;
     margin-bottom: 0%;
     height: 100%; 
@@ -89,5 +86,5 @@ header.headerblock{
 
 .imagenesplay{
     height: 100%;
-    width: 20%;
+    width: 10%;
 }
