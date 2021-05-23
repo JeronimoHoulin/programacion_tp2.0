@@ -10,26 +10,30 @@ HTML genérico del navbar y el footer.
     font-family: sans-serif;
 }
 body{
-    background-color: rgb(5, 17, 148);
-    color : white;
     height: 100vh;
     width: 100vw;
-
+    background: url("imagenes/backkk.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 /* -----------Nav Bar-------------- */
 .headerpagina{
     height: 150px;
+    border-style: solid;
+    border-color: black;
 }
 nav{
     height: 100%;
     width: 100%;
-    background-color: rgb(1, 2, 14);
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     align-items: center;
 }
+
 .kittyimg{
     justify-content: flex-start;
     height: 116%;
@@ -39,19 +43,16 @@ nav{
 .logoname{
     font-family: 'Zen Dots', cursive;
     justify-content: flex-end;
+    color:brown;
+    font-size: 35px;
+    text-decoration: none;
     height:100%;
     margin:0%;
-    width: 10%;
+    width: 20%;
 }
 
 
-h1.hometitle{
-    font-family: 'Dela Gothic One', cursive;
-    font-size: 30px;
-    height: 50%;
-    margin: 20%;
-    width: 11%;
-}
+
 
 /*Buscador*/
 .buscadorito{
