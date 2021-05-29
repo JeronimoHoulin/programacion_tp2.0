@@ -15,47 +15,62 @@
     <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <header class = "headerpagina">
-        <nav>
-            <img class = "kittyimg" src="style/imagenes/logotester.png" alt="logo_music">
+<body><!-- JS -->
+    <script src = "js/index.js"></script>
+    <div class = "wholepage">
+      <!-- Hola -->
+      <a name="top"></a>
+      <header class = "headerpagina">
+          <nav class = "todoelnav">
+              <img class = "kittyimg" src="style/imagenes/logotester.png" alt="logo_music">
+  
+              <nav class="navbar navbar-expand-lg navbar-light">
+                  <div class="container-fluid">
+                    <a class="logoname" href="#">LiMusic</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="playlist.html">Your Playlist</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="generos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Genres
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="detalle_artista.html" tabindex="-1" aria-disabled="false">Details</a>
+                        </li>
+                      </ul>
+                      <w class="d-flex">
+                        <input id = "searchbar" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                      </form>
+                    </div>
+                  </div>
+                </nav>
+  
+          </nav>
+      </header>
 
-            <h1 class = "logoname">LiMusic</h1class></h1>
 
-            <div class = "labeldepag">
-                <h1 class = "hometitle"> Search Results</h1>
-            </div>
-            <!-- acá estuvo jero -->
+      <h1>
+          We think you might have meant:
+      </h1>
 
-            <!--Cabecera-->
-            <div class ="buscadorito">
-            <form action="rdos_busqueda" method="GET">
-                <div class = "busca">
-                    <label for="busqueda">Buscar:  </label>
-                    <input type="text" name="busqueda" value="">
-                </div>
-                <div class = "searchbutton">
-                    <button type="submit">Search !</button>
-                </div>
-            </form>
-            </div>
+      <ul id ="rdoslista">
+      </ul>
 
-
-            <ul class = "navoptions">
-                <li><a href="index.html"> Home </a></li>
-                <li><a href="detalle_artista.html">Details</a></li>
-                <li><a href="generos.html">Genres</a></li>
-                <li><a href="playlist.html">Your Playlist</a></li>
-            </ul>
-
-        </nav>
-    </header>
-    <footer>
-        <ul class = "footer_names">
-            <li class = "jero">Jerónimo Houlin</li>
-            <li class = "fede">Fede Vaneskeheian</li>
-            <li class = "oli">Oli Fodrini</li>
-        </ul>
-    </footer>
 </body>
 </html>
