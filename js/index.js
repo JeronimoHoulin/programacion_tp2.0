@@ -20,7 +20,8 @@ window.addEventListener('load',function(){
       .then(function(data){
         //console.log(data)
         let listaartistas = data;
-        //console.log(listaartistas.data[1])
+        console.log(listaartistas.data)
+        console.log(listaartistas.data[0])
         //console.log(listaartistas.data[0].title);
 
         const searchbar = document.getElementById('searchbar');
@@ -33,8 +34,8 @@ window.addEventListener('load',function(){
               listaartistas.data[i].album.title.includes(searchstring)||
               listaartistas.data[i].artist.name.includes(searchstring)
             ){
-                //console.log(listaartistas.data[i].album.title);
-                //console.log(listaartistas.data[i].artist.name);
+                console.log(listaartistas.data[i].album.title);
+                console.log(typeof listaartistas.data[i].artist.name);
                 let rdo_album = listaartistas.data[i].album.title;
                 let rdo_artista = listaartistas.data[i].artist.name;
                 document.getElementById("rdoslista").innerHTML = '<li>'+ rdo_album +'</li>';
