@@ -13,15 +13,9 @@ window.addEventListener('load',function(){
       })
     }
 
-    //Search Results
-    // with QS
-    /*
-    let queryString = this.location.search;
-    let queryStringObj = new URLSearchParams(queryString);
+    //NOMBRES DE LOS ARTISTAS
 
-    let abuscar = queryStringObj.get('busqueda'); //acá va el name del campo
-
-    let url = 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/27/top';
+    let url = 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/27/related'; //cambiar a TOP?
 
     fetch( url )
       .then(function(response){
@@ -31,35 +25,31 @@ window.addEventListener('load',function(){
         //acá el code
         console.log(data);
         let arrayInfo = data.data;
-        let lista = document.querySelector('rdoslista')
-        let contenedor_rdos = '';
+        //console.log(arrayInfo[1].name);
+        let nombresdeart = document.querySelectorAll('.nombreblock.artistas');
+        //console.log(nombresdeart);
 
-        for(let i=0; 1<arrayInfo.length; i++){
-          contenedor_rdos += `<li>
-                                <a href = "detalle_cancion.html?id=${
-                                  arrayInfo[i].album.title}">
-                                  ${arrayInfo[i].artist.name}
-                                  </a>
-                            </li>`
-        }
-        lista.innerHTML = contenedor_rdos;
+        for(let i=0; i<nombresdeart.length; i++){
+          nombresdeart[i].innerHTML=`${arrayInfo[i].name}`;
+        };
+
       })
       .catch(function(error){
-        console.log("el error fue:" + error);
-      });
-*/
+        console.log("El error fue eeeeste:" + error);
+      })
 
-
+      //SUS CANCIONES
 
 
 
     // without QS
-    fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/27/top')
+    /*
+    fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/27')
       .then(function(response){
         return response.json();
       })
       .then(function(data){
-        //console.log(data)
+        console.log(data)
         let listaartistas = data;
         //console.log(listaartistas.data);
         //console.log(listaartistas.data[0]);
@@ -94,7 +84,7 @@ window.addEventListener('load',function(){
       .catch(function(error){
         //console.log("el error fue:" + error);
       });
-
+*/
 
 
 
