@@ -10,7 +10,7 @@ window.addEventListener('load',function(){
       });
       input.addEventListener('mouseout', function(){
         input.style.color = "#21252954"
-      })
+      });
     }
 
     //NOMBRES DE LOS ARTISTAS
