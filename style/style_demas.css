@@ -90,3 +90,30 @@ header.headerblock{
 }
 
 
+/* generos html */ 
+.topgenre{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 45px;
+    color: black;
+    font-family: 'Zen Dots', cursive;
+}
+.genr{
+    text-align: center;
+    font-size: 25px; 
+    padding-bottom: 20px;
+    font-family: 'Zen Dots', cursive;
+    color: whitesmoke;
+}
+/* detalles generos */ 
+.h3s{
+    text-align: justify;
+    font-size: 35px;
+    text-decoration: double underline;
+}
+.list{
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 20px;
+}

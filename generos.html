@@ -14,174 +14,89 @@
     <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
 </head>
-<body>
-    <a name="top"></a>
-    <div class = "wholepage">
-    <header class = "headerpagina">
-        <nav class = "todoelnav">
-            <img class = "kittyimg" src="style/imagenes/logotester.png" alt="logo_music">
+<body><!-- Hola -->
+  <a name="top"></a>  
+      <nav class ="headerpagina">
+          <img class = "kittyimg" src="style/imagenes/logotester.png" alt="logo_music">
 
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container-fluid">
-                  <a class="logoname" href="#">LiMusic</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="home.html">Home</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="playlist.html">Your Playlist</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="generos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Genres
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="detalle_artista.html" tabindex="-1" aria-disabled="false">Details</a>
-                      </li>
-                    </ul>
-                    <w class="d-flex">
-                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                      <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+          <h1 class = "logoname">LiMusic</h1class></h1>
+
+          <h1 class = "hometitle">Home</h1>
+
+
+          <!--Cabecera-->
+          <nav class ="cabecerav">
+
+              <ul class = "navoptions">
+                  <nav class ="infouno">
+                      <li><a href="index.html"> Home </a></li>
+                      <li><a href="detalle_artista.html">Details</a></li>
+                  </nav>
+                  <nav class ="infodos">
+                      <li><a href="generos.html">Genres</a></li>
+                      <li><a class="mediolarga" href="playlist.html">Your Playlist</a></li>
+                  </nav>
+              </ul>
+
+              <div class ="buscadorito">
+                  <form action="rdos_busqueda" method="GET">
+                      <div class = "busca">
+                          <label for="busqueda"></label>
+                          <input type="text" name="busqueda" value="" class ="searchbar">
+                      </div>
+                      <div class = "searchbutton">
+                          <button class= "botonto" type="submit">Search !</button>
+                      </div>
+                  </form>
                   </div>
-                </div>
-              </nav>
 
-        </nav>
-    </header>
+          </nav>
+      </nav>
 
-    
+<!-- contenido generos -->
+    <!-- tecnicamente faltan las fotos de los artistas -->
+    <section> 
+      <div class="topgenre">
+          <strong>Your top genres</strong>
+      </div>
+      <article> 
+          <ul type="none">
+              <li class="genr"><a href="./detalle_generos.html" style="color: aliceblue;">Pop</a></li>
+              <li class="genr"><a href="./detalle_generos.html" style="color: aliceblue;">Rap</a></li>
+              <li class="genr"><a href="./detalle_generos.html" style="color: aliceblue;">Rock</a></li>
+              <li class="genr"><a href="./detalle_generos.html" style="color: aliceblue;">Reggaeton</a></li>
+              <li class="genr"><a href="./detalle_generos.html" style="color: aliceblue;">Cumbia</a></li>
+          </ul>
+      </article>
+      <div class="topgenre">
+          <strong>Browse all genres</strong>
+      </div>
+      <article>
+          <ul type="none">
+              <li class="genr"><a href="./detalle_generos.html" style="color: aliceblue;">Electronic</a></li>
+              <li class="genr"><a href="./detalle_generos.html" style="color: aliceblue;">Rock</a></li>
+              <li class="genr"><a href="./detalle_generos.html" style="color: aliceblue;">Indie</a></li>
+              <li class="genr"><a href="./detalle_generos.html" style="color: aliceblue;">Pop</a></li>
+              <li class="genr"><a href="./detalle_generos.html" style="color: aliceblue;">Rap</a></li>
+              <li class="genr"><a href="./detalle_generos.html" style="color: aliceblue;">Jazz</a></li>
+              <li class="genr"><a href="./detalle_generos.html" style="color: aliceblue;">Salsa</a></li>
+              <li class="genr"><em><a href="./detalle_generos.html" style="color: aliceblue;">Browse more</a></em></li>
+          </ul>
+      </article>
 
     <div class = "pullup">
-        <a href="#top">Get Back To The Top !</a>
+        <a class="pullerrr" href="#top">Get Back To The Top !</a>
     </div>
 
-
+    </section>
 <!-- Footer -->
-<footer class="page-footer font-small mdb-color lighten-3 pt-4">
-
-    <!-- Footer Links -->
-    <div class="container text-center text-md-left">
-  
-      <!-- Grid row -->
-      <div class="row">
-  
-        <!-- Grid column -->
-        <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
-  
-          <!-- Content -->
-          <h5 class="font-weight-bold text-uppercase mb-4">Advisory</h5>
-          <p>LiMusic is not held responsible for any liabilities concerning musical licenses and royalties.</p>
-          <p>LiMusic only holds the rights to expose good music, not pay dues to any author or client.</p>
-  
-        </div>
-        <!-- Grid column -->
-  
-        <hr class="clearfix w-100 d-md-none">
-  
-        <!-- Grid column -->
-        <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
-  
-          <!-- Links -->
-          <h5 class="font-weight-bold text-uppercase mb-4">Info.</h5>
-  
-          <ul class="list-unstyled">
-            <li>
-              <p>
-                <a href="aboutus.html">ABOUT US</a>
-              </p>
-            </li>
-            <li>
-              <p>
-                <a href="#!">BLOG</a>
-              </p>
-            </li>
-            <li>
-              <p>
-                <a href="#!">AWARDS</a>
-              </p>
-            </li>
-          </ul>
-  
-        </div>
-        <!-- Grid column -->
-  
-        <hr class="clearfix w-100 d-md-none">
-  
-        <!-- Grid column -->
-        <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
-  
-          <!-- Contact details -->
-          <h5 class="font-weight-bold text-uppercase mb-4">Address</h5>
-  
-          <ul class="list-unstyled">
-            <li>
-              <p>
-                <i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
-            </li>
-            <li>
-              <p>
-                <i class="fas fa-envelope mr-3"></i> jeronimo.houlin@gmail.com</p>
-            </li>
-            <li>
-              <p>
-                <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
-            </li>
-            <li>
-              <p>
-                <i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
-            </li>
-          </ul>
-  
-        </div>
-        <!-- Grid column -->
-  
-        <hr class="clearfix w-100 d-md-none">
-  
-        <!-- Grid column -->
-        <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
-  
-          <!-- Social buttons -->
-          <h5 class="font-weight-bold text-uppercase mb-4">Follow Us</h5>
-            
-          <!-- Facebook -->
-          <a type="button" class="btn-floating btn-fb">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <!-- Twitter -->
-          <a type="button" class="btn-floating btn-tw">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <!-- Google +-->
-          <a type="button" class="btn-floating btn-gplus">
-            <i class="fab fa-google-plus-g"></i>
-          </a>
-          <!-- Dribbble -->
-          <a type="button" class="btn-floating btn-dribbble">
-            <i class="fab fa-dribbble"></i>
-          </a>
-  
-        </div>
-        <!-- Grid column -->
-  
-      </div>
-      <!-- Grid row -->
-  
-    </div>
-    <!-- Footer Links -->
-  
-  </footer>
+<footer>
+  <ul class = "footer_names">
+      <li class = "jero">Jeronimmo Houlin</li>
+      <li class = "fede">Fede Vaneskeheian</li>
+      <li class = "oli">Oli Fodrini</li>
+  </ul>
+</footer>
   <!-- Footer -->
   </div>
 </body>
