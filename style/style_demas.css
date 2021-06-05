@@ -12,7 +12,7 @@ header.headerblock{
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: center;
-    color: #21252954;
+    color: #10101154;
     margin-left:1%;
     height: 30%;
     width: 90%;
@@ -37,6 +37,16 @@ header.headerblock{
 .imagenesblock{
     height: 50%;
     width: 50%;
+}
+
+.listablocky.artistas li a{
+    color: #212529;
+    text-decoration: none;
+}
+
+.listitaalbums li a{
+    color: #212529;
+    text-decoration: none;
 }
 
 

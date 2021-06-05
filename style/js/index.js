@@ -13,9 +13,9 @@ window.addEventListener('load',function(){
       });
     }
 
-    //NOMBRES DE LOS ARTISTAS
+    //DATA DE ARTISTAS
 
-    let url = 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/27/related'; //cambiar a TOP?
+    let url = 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/27/related'; 
 
     fetch( url )
       .then(function(response){
@@ -26,11 +26,16 @@ window.addEventListener('load',function(){
         console.log(data);
         let arrayInfo = data.data;
         //console.log(arrayInfo[1].name);
+
+        /*NOMBRES DE LOS ARTISTAS*/
         let nombresdeart = document.querySelectorAll('.nombreblock.artistas');
         //console.log(nombresdeart);
+        /*FOTOS DE LOS ARTISTAS*/
+        let fotosdeartistas = document.querySelectorAll('.imagenesblock.artistas')
 
         for(let i=0; i<nombresdeart.length; i++){
           nombresdeart[i].innerHTML=`${arrayInfo[i].name}`;
+          fotosdeartistas[i].src = `${arrayInfo[i].picture_big}`;
         };
 
       })
@@ -38,7 +43,60 @@ window.addEventListener('load',function(){
         console.log("El error fue eeeeste:" + error);
       })
 
-      //SUS CANCIONES
+      //DATA DE CANCIONES
+      let url_canciones = "https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/27/related";
+      fetch( url_canciones )
+      .then(function(response){
+        return response.json();
+      })
+      .then(function(data){
+        //acá el code
+        console.log(data);
+        let arrayInfo1 = data.data;
+        //console.log(arrayInfo1[1].name);
+
+        /*TITULOS DE LOS ALBUMS*/
+        let nombrescanciones = document.querySelectorAll('.nombreblock.canciones');
+        /*FOTOS DE LOS ALBUMS*/
+        let fotoscanciones = document.querySelectorAll('.imagenesblock.canciones')
+
+        for(let i=0; i<nombrescanciones.length; i++){
+          nombrescanciones[i].innerHTML=`${arrayInfo1[i+15].name}`;
+          fotoscanciones[i].src = `${arrayInfo1[i+15].picture_big}`;
+        };
+
+      })
+      .catch(function(error){
+        console.log("El error fue eeeeste:" + error);
+      })
+
+      //DATA DE ALBUMES
+
+      let url_album = "https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/27/related";//cambiar a albums
+      fetch( url_album )
+      .then(function(response){
+        return response.json();
+      })
+      .then(function(data){
+        //acá el code
+        console.log(data);
+        let arrayInfo2 = data.data;
+        //console.log(arrayInfo1[1].name);
+
+        /*TITULOS DE LOS ALBUMS*/
+        let nombresdealbum = document.querySelectorAll('.nombreblock.albums');
+        /*FOTOS DE LOS ALBUMS*/
+        let fotosdealbums = document.querySelectorAll('.imagenesblock.albums')
+
+        for(let i=0; i<nombresdealbum.length; i++){
+          nombresdealbum[i].innerHTML=`${arrayInfo2[i+10].name}`;
+          fotosdealbums[i].src = `${arrayInfo2[i+10].picture_big}`;
+        };
+
+      })
+      .catch(function(error){
+        console.log("El error fue eeeeste:" + error);
+      })
 
 
 
