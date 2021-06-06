@@ -1,6 +1,6 @@
 /* css del home */
 header.headerblock{
-    margin-top: 10%;
+    margin-top: 8%;
     margin-left:1%;
     font-size: 45px;
     width: 90vw;
@@ -11,32 +11,44 @@ header.headerblock{
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     color: #10101154;
     margin-left:1%;
     height: 30%;
     width: 90%;
     box-sizing: border-box;
+    align-items: stretch;
+    /*nash*/
+    overflow: scroll;
+}
+/*NO S.B. DISPL*/
+.listablock::-webkit-scrollbar{
+    display: none;
 }
 
-.contenedorblock{
+    
+.contedorblock{
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
-    justify-content: space-around;
     box-sizing: border-box;
+
+    margin-left: 10%;
 }
 
 .nombreblock{
     justify-content: flex-start;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     margin: 0%;
-    margin-top: 2%;
     margin-bottom: 0%;
 }
-
+/*nash*/
 .imagenesblock{
-    height: 50%;
-    width: 50%;
+    height: 220px;
+    width: 200px;
 }
 
 .listablocky.artistas li a{
