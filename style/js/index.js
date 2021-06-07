@@ -44,7 +44,7 @@ window.addEventListener('load',function(){
       })
 
       //DATA DE CANCIONES
-      let url_canciones = "https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/27/related";
+      let url_canciones = "https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/27/related"; //cambiar a artistas
       fetch( url_canciones )
       .then(function(response){
         return response.json();
@@ -61,8 +61,8 @@ window.addEventListener('load',function(){
         let fotoscanciones = document.querySelectorAll('.imagenesblock.canciones')
 
         for(let i=0; i<nombrescanciones.length; i++){
-          nombrescanciones[i].innerHTML=`${arrayInfo1[i+15].name}`;
-          fotoscanciones[i].src = `${arrayInfo1[i+15].picture_big}`;
+          nombrescanciones[i].innerHTML=`${arrayInfo1[i].name}`;
+          fotoscanciones[i].src = `${arrayInfo1[i].picture_big}`;
         };
 
       })
@@ -89,14 +89,51 @@ window.addEventListener('load',function(){
         let fotosdealbums = document.querySelectorAll('.imagenesblock.albums')
 
         for(let i=0; i<nombresdealbum.length; i++){
-          nombresdealbum[i].innerHTML=`${arrayInfo2[i+10].name}`;
-          fotosdealbums[i].src = `${arrayInfo2[i+10].picture_big}`;
+          nombresdealbum[i].innerHTML=`${arrayInfo2[i].name}`;
+          fotosdealbums[i].src = `${arrayInfo2[i].picture_big}`;
         };
 
       })
       .catch(function(error){
         console.log("El error fue eeeeste:" + error);
       })
+
+
+    // Agregar a favs
+      let lista_favs = [];
+      let favsong = document.querySelectorAll(".favsong")
+      favsong.addEventListener('click', function(e){
+        e.preventDefault();
+
+        //agregoal array
+        
+
+
+      })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

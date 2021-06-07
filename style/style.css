@@ -67,22 +67,6 @@ nav{
     box-sizing: border-box;
 }
 
-.toggle_boton{
-    display: none;
-    margin-top: 1%;
-    margin-right: 1%;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-}
-.toggle_boton.barr{
-    height:3px;
-    width: 100%;
-    background-color: white;
-    border-radius: 10px;
-}
-
 .kittyimg{
     justify-content: flex-start;
     height: 120%;
@@ -159,6 +143,9 @@ div.searchbutton button{
 
 
 /*Opciones*/
+.navoptions2{
+    display: none;
+}
 .navoptions{
     list-style-type: none;
 
@@ -280,19 +267,31 @@ Responsive design / Queries
     /*NAV OPS*/
     .navoptions{
         display:none;
-        
-        flex-direction: column;
-        align-items:flex-start;
     }
-    .toggle_boton{
-        display: flex;
-    }
+    .navoptions2{
+        width: 100%;
 
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        box-sizing: border-box;
+        justify-content: space-between;
+    }
+    .navoptions2 li{
+        list-style-type:none;
+    }
+    .navoptions2 li a{
+        color: #212529;
+        text-decoration: none;
+    }
 }
 @media (max-width:768px){
     /*Mantener tamaño del gato*/
     .headerpagina{
         height: 100px;
+    }
+    .cabecerav{
+        width: 30%;
     }
 }
 
@@ -311,12 +310,16 @@ Responsive design / Queries
         height: 50%;
         align-items: flex-end;
     }
+    /*Search bar*/
+    .buscadorito{
+        display:none;
+    }
 }
 
 @media (max-width:420px){
     /*Mantener tamaño del gato*/
     .headerpagina{
-        height: 80px;
+        height: 60px;
     }
 }
 
