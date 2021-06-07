@@ -15,39 +15,43 @@
     <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <header class = "headerpagina">
-        <nav>
+<body><!-- Hola -->
+    <a name="top"></a>  
+        <nav class ="headerpagina">
             <img class = "kittyimg" src="style/imagenes/logotester.png" alt="logo_music">
 
             <h1 class = "logoname">LiMusic</h1class></h1>
 
-            <div class = "labeldepag">
-                <h1 class = "hometitle">Detail</h1>
-            </div>
-            <!-- acá estuvo jero -->
+            <h1 class = "hometitle">Home</h1>
+
 
             <!--Cabecera-->
-            <div class ="buscadorito">
-            <form action="rdos_busqueda" method="GET">
-                <div class = "busca">
-                    <label for="busqueda">Buscar:  </label>
-                    <input type="text" name="busqueda" value="">
-                </div>
-                <div class = "searchbutton">
-                    <button type="submit">Search !</button>
-                </div>
-            </form>
-            </div>
+            <nav class ="cabecerav">
 
+                <ul class = "navoptions">
+                    <nav class ="infouno">
+                        <li><a href="index.html"> Home </a></li>
+                        <li><a href="detalle_artista.html">Details</a></li>
+                    </nav>
+                    <nav class ="infodos">
+                        <li><a href="generos.html">Genres</a></li>
+                        <li><a class="mediolarga" href="playlist.html">Your Playlist</a></li>
+                    </nav>
+                </ul>
 
-            <ul class = "navoptions">
-                <li><a href="home.html"> Home </a></li>
-                <li><a href="detalle_artista.html">Details</a></li>
-                <li><a href="generos.html">Genres</a></li>
-                <li><a href="playlist.html">Your Playlist</a></li>
-            </ul>
+                <div class ="buscadorito">
+                    <form action="rdos_busqueda" method="GET">
+                        <div class = "busca">
+                            <label for="busqueda"></label>
+                            <input type="text" name="busqueda" value="" class ="searchbar">
+                        </div>
+                        <div class = "searchbutton">
+                            <button class= "botonto" type="submit">Search !</button>
+                        </div>
+                    </form>
+                    </div>
 
+            </nav>
         </nav>
     </header>
 
@@ -69,6 +73,8 @@
         <a class="pullerrr" href="#top">Get Back To The Top !</a>
     </div>
 
+
+        
     <footer>
         <ul class = "footer_names">
             <li class = "jero">Jerónimo Houlin</li>

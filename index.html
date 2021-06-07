@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!--Responsive-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LiMusic</title>
     <!-- Viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,51 +17,120 @@
 </head>
 
 <body>
-    <!-- Hola -->
-    <a name="top"></a>
-    <header class = "headerpagina">
-        <nav>
-            <img class = "kittyimg" src="style/imagenes/logotester.png" alt="logo_music">
-
-            <h1 class = "logoname">LiMusic</h1class></h1>
-
-            <div class = "labeldepag">
+    <!-- JS -->
+    <script src = "style/js/index.js"></script>
+    <div class = "wholepage">
+        <!-- Hola -->
+        <a name="top"></a>  
+            <nav class ="headerpagina">
+                <img class = "kittyimg" src="style/imagenes/logotester.png" alt="logo_music">
+                
+                <h1 class = "logoname">LiMusic</h1class></h1>
                 <h1 class = "hometitle">Home</h1>
+
+
+                <!--Cabecera-->
+                <a href="#" class ="toggle_boton">
+                    <span class="barr"></span>
+                    <span class="barr"></span>
+                    <span class="barr"></span>
+                </a>
+                <nav class ="cabecerav">
+                    <ul class = "navoptions">
+                        <nav class ="infouno">
+                            <li><a href="index.html"> Home </a></li>
+                            <li><a href="detalle_artista.html">Details</a></li>
+                        </nav>
+                        <nav class ="infodos">
+                            <li><a href="generos.html">Genres</a></li>
+                            <li><a class="mediolarga" href="playlist.html">Your Playlist</a></li>
+                        </nav>
+                    </ul>
+
+                    <div class ="buscadorito">
+                        <form action="rdos_busqueda" method="GET">
+                            <div class = "busca">
+                                <label for="busqueda"></label>
+                                <input type="text" name="busqueda" value="" class ="searchbar">
+                            </div>
+                            <div class = "searchbutton">
+                                <button class= "botonto" type="submit">Search !</button>
+                            </div>
+                        </form>
+                        </div>
+
+                </nav>
+            </nav>
+
+
+
+
+
+        <!-- Body -->
+        <header class = "headerblock">Artists</header>
+        <div class = "listablock">
+
+            <div class = "contedorblock">
+                <h1 class = "nombreblock artistas">Raúl</h1>
+                <img src="style/imagenes/generic.jpg" class = "imagenesblock artistas" alt="genericman">
+                <div>
+                    <ul class="listablocky artistas">
+                        <li><a href="detalle_cancion.html">Songs</a></li>
+                        <li><a href="detalle_album.html">Albums</a></li>
+                        <li><a href="detalle_artista.html">Details</a></li>
+                    </ul>
+                </div>
             </div>
 
-
-            <!--Cabecera-->
-            <div class ="buscadorito">
-            <form action="rdos_busqueda" method="GET">
-                <div class = "busca">
-                    <label for="busqueda">Buscar:  </label>
-                    <input type="text" name="busqueda" value="">
+            <div class = "contedorblock">
+                <h1 class = "nombreblock artistas">mti</h1>
+                <img src="style/imagenes/generic.jpg" class = "imagenesblock artistas" alt="genericman">
+                <div>
+                    <ul class="listablocky artistas">
+                        <li><a href="detalle_cancion.html">Songs</a></li>
+                        <li><a href="detalle_album.html">Albums</a></li>
+                        <li><a href="detalle_artista.html">Details</a></li>
+                    </ul>
                 </div>
-                <div class = "searchbutton">
-                    <button type="submit">Search !</button>
-                </div>
-            </form>
             </div>
 
+            <div class = "contedorblock">
+                <h1 class = "nombreblock artistas">caci</h1>
+                <img src="style/imagenes/generic.jpg" class = "imagenesblock artistas" alt="genericman">
+                <div>
+                    <ul class="listablocky artistas">
+                        <li><a href="detalle_cancion.html">Songs</a></li>
+                        <li><a href="detalle_album.html">Albums</a></li>
+                        <li><a href="detalle_artista.html">Details</a></li>
+                    </ul>
+                </div>
+            </div>
 
-            <ul class = "navoptions">
-                <li><a href="index.html"> Home </a></li>
-                <li><a href="detalle_artista.html">Details</a></li>
-                <li><a href="generos.html">Genres</a></li>
-                <li><a href="playlist.html">Your Playlist</a></li>
-            </ul>
+            <div class = "contedorblock">
+                <h1 class = "nombreblock artistas">caci</h1>
+                <img src="style/imagenes/generic.jpg" class = "imagenesblock artistas" alt="genericman">
+                <div>
+                    <ul class="listablocky artistas">
+                        <li><a href="detalle_cancion.html">Songs</a></li>
+                        <li><a href="detalle_album.html">Albums</a></li>
+                        <li><a href="detalle_artista.html">Details</a></li>
+                    </ul>
+                </div>
+            </div>
 
-        </nav>
-    </header>
+            <div class = "contedorblock">
+                <h1 class = "nombreblock artistas">caci</h1>
+                <img src="style/imagenes/generic.jpg" class = "imagenesblock artistas" alt="genericman">
+                <div>
+                    <ul class="listablocky artistas">
+                        <li><a href="detalle_cancion.html">Songs</a></li>
+                        <li><a href="detalle_album.html">Albums</a></li>
+                        <li><a href="detalle_artista.html">Details</a></li>
+                    </ul>
+                </div>
+            </div>
 
-
-
-
-
-    <!-- Body -->
-    <header class = "headerblock">Artists</header>
-    <div class = "listablock">
-
+<<<<<<< HEAD
         <div class = "contedorblock">
             <h1 class = "nombreblock">Raúl</h1>
             <img src="style/imagenes/generic.jpg" class = "imagenesblock" alt="genericman">
@@ -69,9 +140,21 @@
                     <li><a href="./detalle_album.html" style="color: #21252954;">Albums</a></li>
                     <li><a href="./detalle_artista.html" style="color: #21252954;">Detail</a></li>
                 </ul>
+=======
+            <div class = "contedorblock">
+                <h1 class = "nombreblock artistas">chci</h1>
+                <img src="style/imagenes/generic.jpg" class = "imagenesblock artistas" alt="genericman">
+                <div>
+                    <ul class="listablocky artistas">
+                        <li><a href="detalle_cancion.html">Songs</a></li>
+                        <li><a href="detalle_album.html">Albums</a></li>
+                        <li><a href="detalle_artista.html">Details</a></li>
+                    </ul>
+                </div>
+>>>>>>> ff62f6a489fef8919bb58fff28e6ee61b272ea00
             </div>
-        </div>
 
+<<<<<<< HEAD
         <div class = "contedorblock">
             <h1 class = "nombreblock">Martin</h1>
             <img src="style/imagenes/generic.jpg" class = "imagenesblock" alt="genericman">
@@ -81,9 +164,21 @@
                     <li><a href="./detalle_album.html" style="color: #21252954;">Albums</a></li>
                     <li><a href="./detalle_artista.html" style="color: #21252954;">Detail</a></li>
                 </ul>
+=======
+            <div class = "contedorblock">
+                <h1 class = "nombreblock artistas">Martin</h1>
+                <img src="style/imagenes/generic.jpg" class = "imagenesblock artistas" alt="genericman">
+                <div>
+                    <ul class="listablocky artistas">
+                        <li><a href="detalle_cancion.html">Songs</a></li>
+                        <li><a href="detalle_album.html">Albums</a></li>
+                        <li><a href="detalle_artista.html">Details</a></li>
+                    </ul>
+                </div>
+>>>>>>> ff62f6a489fef8919bb58fff28e6ee61b272ea00
             </div>
-        </div>
 
+<<<<<<< HEAD
         <div class = "contedorblock">
             <h1 class = "nombreblock">José</h1>
             <img src="style/imagenes/generic.jpg" class = "imagenesblock" alt="genericman">
@@ -93,9 +188,21 @@
                     <li><a href="./detalle_album.html" style="color: #21252954;">Albums</a></li>
                     <li><a href="./detalle_artista.html" style="color: #21252954;">Detail</a></li>
                 </ul>
+=======
+            <div class = "contedorblock">
+                <h1 class = "nombreblock artistas">José</h1>
+                <img src="style/imagenes/generic.jpg" class = "imagenesblock artistas" alt="genericman">
+                <div>
+                    <ul class="listablocky artistas">
+                        <li><a href="detalle_cancion.html">Songs</a></li>
+                        <li><a href="detalle_album.html">Albums</a></li>
+                        <li><a href="detalle_artista.html">Details</a></li>
+                    </ul>
+                </div>
+>>>>>>> ff62f6a489fef8919bb58fff28e6ee61b272ea00
             </div>
-        </div>
 
+<<<<<<< HEAD
         <div class = "contedorblock">
             <h1 class = "nombreblock">Tomás</h1>
             <img src="style/imagenes/generic.jpg" class = "imagenesblock" alt="genericman">
@@ -105,9 +212,21 @@
                     <li><a href="./detalle_album.html" style="color: #21252954;">Albums</a></li>
                     <li><a href="./detalle_artista.html" style="color: #21252954;">Detail</a></li>
                 </ul>
+=======
+            <div class = "contedorblock">
+                <h1 class = "nombreblock artistas">Tomás</h1>
+                <img src="style/imagenes/generic.jpg" class = "imagenesblock artistas" alt="genericman">
+                <div>
+                    <ul class="listablocky artistas">
+                        <li><a href="detalle_cancion.html">Songs</a></li>
+                        <li><a href="detalle_album.html">Albums</a></li>
+                        <li><a href="detalle_artista.html">Details</a></li>
+                    </ul>
+                </div>
+>>>>>>> ff62f6a489fef8919bb58fff28e6ee61b272ea00
             </div>
-        </div>
 
+<<<<<<< HEAD
         <div class = "contedorblock">
             <h1 class = "nombreblock">Tito</h1>
             <img src="style/imagenes/generic.jpg" class = "imagenesblock" alt="genericman">
@@ -117,18 +236,39 @@
                     <li><a href="./detalle_album.html" style="color: #21252954;">Albums</a></li>
                     <li><a href="./detalle_artista.html" style="color: #21252954;">Detail</a></li>
                 </ul>
+=======
+            <div class = "contedorblock">
+                <h1 class = "nombreblock artistas">Tito</h1>
+                <img src="style/imagenes/generic.jpg" class = "imagenesblock artistas" alt="genericman">
+                <div>
+                    <ul class="listablocky artistas">
+                        <li><a href="detalle_cancion.html">Songs</a></li>
+                        <li><a href="detalle_album.html">Albums</a></li>
+                        <li><a href="detalle_artista.html">Details</a></li>
+                    </ul>
+                </div>
+>>>>>>> ff62f6a489fef8919bb58fff28e6ee61b272ea00
             </div>
+
         </div>
 
-    </div>
 
 
 
 
 
+        <header class = "headerblock">Recomended Songs</header>
+        <div class = "listablock">
 
-    <header class = "headerblock">Recomended Songs</header>
-    <div class = "listablock">
+            <div class = "contedorblock">
+                <h1 class = "nombreblock canciones">un tema</h1>
+                <img src="style/imagenes/generic.jpg" class = "imagenesblock canciones" alt="genericman">
+                <div>
+                    <ul>
+                        <li>Artist</li>
+                    </ul>
+                </div>
+            </div>
 
         <div class = "contedorblock">
             <h1 class = "nombreblock"><a href="./detalle_cancion.html" style="color: #21252954;">un tema</a></h1>
@@ -137,8 +277,15 @@
                 <ul>
                     <li>Artist</li>
                 </ul>
+            <div class = "contedorblock">
+                <h1 class = "nombreblock canciones">Otro</h1>
+                <img src="style/imagenes/generic.jpg" class = "imagenesblock canciones" alt="genericman">
+                <div>
+                    <ul>
+                        <li>Artist</li>
+                    </ul>
+                </div>
             </div>
-        </div>
 
         <div class = "contedorblock">
             <h1 class = "nombreblock"><a href="./detalle_cancion.html" style="color: #21252954;">Otro</a></h1>
@@ -147,8 +294,15 @@
                 <ul>
                     <li>Artist</li>
                 </ul>
+            <div class = "contedorblock">
+                <h1 class = "nombreblock canciones">Otro</h1>
+                <img src="style/imagenes/generic.jpg" class = "imagenesblock canciones" alt="genericman">
+                <div>
+                    <ul>
+                        <li>Artist</li>
+                    </ul>
+                </div>
             </div>
-        </div>
 
         <div class = "contedorblock">
             <h1 class = "nombreblock"><a href="./detalle_cancion.html" style="color: #21252954;">Otro</a></h1>
@@ -157,8 +311,15 @@
                 <ul>
                     <li>Artist</li>
                 </ul>
+            <div class = "contedorblock">
+                <h1 class = "nombreblock canciones">Otro</h1>
+                <img src="style/imagenes/generic.jpg" class = "imagenesblock canciones" alt="genericman">
+                <div>
+                    <ul>
+                        <li>Artist</li>
+                    </ul>
+                </div>
             </div>
-        </div>
 
         <div class = "contedorblock">
             <h1 class = "nombreblock"><a href="./detalle_cancion.html" style="color: #21252954;">Otro</a></h1>
@@ -167,8 +328,15 @@
                 <ul>
                     <li>Artist</li>
                 </ul>
+            <div class = "contedorblock">
+                <h1 class = "nombreblock canciones">Otro</h1>
+                <img src="style/imagenes/generic.jpg" class = "imagenesblock canciones" alt="genericman">
+                <div>
+                    <ul>
+                        <li>Artist</li>
+                    </ul>
+                </div>
             </div>
-        </div>
 
         <div class = "contedorblock">
             <h1 class = "nombreblock"><a href="./detalle_cancion.html" style="color: #21252954;">Otro</a></h1>
@@ -177,10 +345,58 @@
                 <ul>
                     <li>Artist</li>
                 </ul>
+            <div class = "contedorblock">
+                <h1 class = "nombreblock canciones">Otro</h1>
+                <img src="style/imagenes/generic.jpg" class = "imagenesblock canciones" alt="genericman">
+                <div>
+                    <ul>
+                        <li>Artist</li>
+                    </ul>
+                </div>
             </div>
+
+            <div class = "contedorblock">
+                <h1 class = "nombreblock canciones">Otro</h1>
+                <img src="style/imagenes/generic.jpg" class = "imagenesblock canciones" alt="genericman">
+                <div>
+                    <ul>
+                        <li>Artist</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class = "contedorblock">
+                <h1 class = "nombreblock canciones">Otro</h1>
+                <img src="style/imagenes/generic.jpg" class = "imagenesblock canciones" alt="genericman">
+                <div>
+                    <ul>
+                        <li>Artist</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class = "contedorblock">
+                <h1 class = "nombreblock canciones">Otro</h1>
+                <img src="style/imagenes/generic.jpg" class = "imagenesblock canciones" alt="genericman">
+                <div>
+                    <ul>
+                        <li>Artist</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class = "contedorblock">
+                <h1 class = "nombreblock canciones">Otro</h1>
+                <img src="style/imagenes/generic.jpg" class = "imagenesblock canciones" alt="genericman">
+                <div>
+                    <ul>
+                        <li>Artist</li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
 
-    </div>
 
 
 
@@ -190,9 +406,18 @@
 
 
 
+        <header class = "headerblock">Recomended Albums</header>
+        <div class = "listablock">
 
-    <header class = "headerblock">Recomended Albums</header>
-    <div class = "listablock">
+            <div class = "contedorblock">
+                <h1 class = "nombreblock albums">un album</h1>
+                <img src="style/imagenes/generic.jpg" class = "imagenesblock albums" alt="genericman">
+                <div>
+                    <ul class = "listitaalbums">
+                        <li><a href="detalle_artista.html">Artist</a></li>
+                    </ul>
+                </div>
+            </div>
 
         <div class = "contedorblock">
             <h1 class = "nombreblock"><a href="./detalle_album.html" style="color: #21252954;">un album</a></h1>
@@ -201,8 +426,15 @@
                 <ul>
                     <li>Artist</li>
                 </ul>
+            <div class = "contedorblock">
+                <h1 class = "nombreblock albums">Otro</h1>
+                <img src="style/imagenes/generic.jpg" class = "imagenesblock albums" alt="genericman">
+                <div>
+                    <ul class = "listitaalbums">
+                        <li><a href="detalle_artista.html">Artist</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
 
         <div class = "contedorblock">
             <h1 class = "nombreblock"><a href="./detalle_album.html" style="color: #21252954;">Otro</a></h1>
@@ -211,8 +443,15 @@
                 <ul>
                     <li>Artist</li>
                 </ul>
+            <div class = "contedorblock">
+                <h1 class = "nombreblock albums">Otro</h1>
+                <img src="style/imagenes/generic.jpg" class = "imagenesblock albums" alt="genericman">
+                <div>
+                    <ul class = "listitaalbums">
+                        <li><a href="detalle_artista.html">Artist</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
 
         <div class = "contedorblock">
             <h1 class = "nombreblock"><a href="./detalle_album.html" style="color: #21252954;">Otro</a></h1>
@@ -221,8 +460,15 @@
                 <ul>
                     <li>Artist</li>
                 </ul>
+            <div class = "contedorblock">
+                <h1 class = "nombreblock albums">Otro</h1>
+                <img src="style/imagenes/generic.jpg" class = "imagenesblock albums" alt="genericman">
+                <div>
+                    <ul class = "listitaalbums">
+                        <li><a href="detalle_artista.html">Artist</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
 
         <div class = "contedorblock">
             <h1 class = "nombreblock"><a href="./detalle_album.html" style="color: #21252954;">Otro</a></h1>
@@ -231,8 +477,15 @@
                 <ul>
                     <li>Artist</li>
                 </ul>
+            <div class = "contedorblock">
+                <h1 class = "nombreblock albums">Otro</h1>
+                <img src="style/imagenes/generic.jpg" class = "imagenesblock albums" alt="genericman">
+                <div>
+                    <ul class = "listitaalbums">
+                        <li><a href="detalle_artista.html">Artist</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
 
         <div class = "contedorblock">
             <h1 class = "nombreblock"><a href="./detalle_album.html" style="color: #21252954;">Otro</a></h1>
@@ -241,26 +494,54 @@
                 <ul>
                     <li>Artist</li>
                 </ul>
+            <div class = "contedorblock">
+                <h1 class = "nombreblock albums">Otro</h1>
+                <img src="style/imagenes/generic.jpg" class = "imagenesblock albums" alt="genericman">
+                <div>
+                    <ul class = "listitaalbums">
+                        <li><a href="detalle_artista.html">Artist</a></li>
+                    </ul>
+                </div>
             </div>
+
+            <div class = "contedorblock">
+                <h1 class = "nombreblock albums">Otro</h1>
+                <img src="style/imagenes/generic.jpg" class = "imagenesblock albums" alt="genericman">
+                <div>
+                    <ul class = "listitaalbums">
+                        <li><a href="detalle_artista.html">Artist</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class = "contedorblock">
+                <h1 class = "nombreblock albums">Otro</h1>
+                <img src="style/imagenes/generic.jpg" class = "imagenesblock albums" alt="genericman">
+                <div>
+                    <ul class = "listitaalbums">
+                        <li><a href="detalle_artista.html">Artist</a></li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
 
+
+        <div class = "pullup">
+            <a href="#top">Get Back To The Top !</a>
+        </div>
+
+
+
+
+
+        <footer>
+            <ul class = "footer_names">
+                <li class = "jero">Jeronimmo Houlin</li>
+                <li class = "fede">Fede Vaneskeheian</li>
+                <li class = "oli">Oli Fodrini</li>
+            </ul>
+        </footer>
     </div>
-
-
-    <div class = "pullup">
-        <a href="#top">Get Back To The Top !</a>
-    </div>
-
-
-
-
-
-    <footer>
-        <ul class = "footer_names">
-            <li class = "jero">Jeronimmo Houlin</li>
-            <li class = "fede">Fede Vaneskeheian</li>
-            <li class = "oli">Oli Fodrini</li>
-        </ul>
-    </footer>
 </body>
 </html>
