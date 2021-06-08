@@ -111,6 +111,16 @@ header.headerblock{
     width: 10%;
 }
 
+/* css del home */
+.rdoslista{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.rdoslista li {
+    text-decoration: none;
+    list-style-type: none;
+}
 
 /* generos html */ 
 .topgenre{

@@ -13,7 +13,7 @@ window.addEventListener('load',function(){
       });
     }
 
-    //DATA DE ARTISTAS
+    //DATA DE ARTISTAS////////////////////////////////////////////////////////////
 
     let url = 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/27/related'; 
 
@@ -43,7 +43,9 @@ window.addEventListener('load',function(){
         console.log("El error fue eeeeste:" + error);
       })
 
-      //DATA DE CANCIONES
+
+      //DATA DE CANCIONES////////////////////////////////////////////////////////////
+
       let url_canciones = "https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/27/related"; //cambiar a artistas
       fetch( url_canciones )
       .then(function(response){
@@ -70,7 +72,8 @@ window.addEventListener('load',function(){
         console.log("El error fue eeeeste:" + error);
       })
 
-      //DATA DE ALBUMES
+
+      //DATA DE ALBUMES////////////////////////////////////////////////////////////
 
       let url_album = "https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/27/related";//cambiar a albums
       fetch( url_album )
@@ -98,8 +101,10 @@ window.addEventListener('load',function(){
         console.log("El error fue eeeeste:" + error);
       })
 
+      
 
-    // Agregar a favs
+      // Agregar a favs////////////////////////////////////////////////////////////
+
       let lista_favs = [];
       let favsong = document.querySelectorAll(".favsong")
       favsong.addEventListener('click', function(e){

@@ -17,8 +17,6 @@
 </head>
 
 <body>
-    <!-- JS -->
-    <script src = "style/js/index.js"></script>
     <div class = "wholepage">
         <!-- Hola -->
         <a name="top"></a>  
@@ -43,14 +41,9 @@
                     </ul>
 
                     <div class ="buscadorito">
-                        <form action="rdos_busqueda" method="GET">
-                            <div class = "busca">
-                                <label for="busqueda"></label>
-                                <input type="text" name="busqueda" value="" class ="searchbar">
-                            </div>
-                            <div class = "searchbutton">
-                                <button class= "botonto" type="submit">Search !</button>
-                            </div>
+                        <form class = "elbuscadorr" action="rdos_busqueda.html" method="GET">
+                            <input type="text" name="busqueda" value="" class ="searchbar">
+                            <button class= "botonto" type="submit">Search!</button>
                         </form>
                     </div>
 
@@ -426,5 +419,8 @@
             </ul>
         </footer>
     </div>
+
+    <!-- JS -->
+    <script src = "style/js/index.js"></script>
 </body>
 </html>
