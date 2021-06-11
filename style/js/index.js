@@ -46,7 +46,7 @@ window.addEventListener('load',function(){
 
       //DATA DE CANCIONES////////////////////////////////////////////////////////////
 
-      let url_canciones = "https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/27/related"; //cambiar a artistas
+      let url_canciones = "https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/tracks"; 
       fetch( url_canciones )
       .then(function(response){
         return response.json();
@@ -63,8 +63,8 @@ window.addEventListener('load',function(){
         let fotoscanciones = document.querySelectorAll('.imagenesblock.canciones')
 
         for(let i=0; i<nombrescanciones.length; i++){
-          nombrescanciones[i].innerHTML=`${arrayInfo1[i].name}`;
-          fotoscanciones[i].src = `${arrayInfo1[i].picture_big}`;
+          nombrescanciones[i].innerHTML=`${arrayInfo1[i].title}`;
+          fotoscanciones[i].src = `${arrayInfo1[i].album.cover_big}`;
         };
 
       })
@@ -75,7 +75,7 @@ window.addEventListener('load',function(){
 
       //DATA DE ALBUMES////////////////////////////////////////////////////////////
 
-      let url_album = "https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/27/related";//cambiar a albums
+      let url_album = "https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/albums";
       fetch( url_album )
       .then(function(response){
         return response.json();
@@ -92,8 +92,8 @@ window.addEventListener('load',function(){
         let fotosdealbums = document.querySelectorAll('.imagenesblock.albums')
 
         for(let i=0; i<nombresdealbum.length; i++){
-          nombresdealbum[i].innerHTML=`${arrayInfo2[i].name}`;
-          fotosdealbums[i].src = `${arrayInfo2[i].picture_big}`;
+          nombresdealbum[i].innerHTML=`${arrayInfo2[i].title}`;
+          fotosdealbums[i].src = `${arrayInfo2[i].cover_big}`;
         };
 
       })
