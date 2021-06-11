@@ -122,33 +122,52 @@ header.headerblock{
     list-style-type: none;
 }
 
+
+
 /* generos html */ 
 .topgenre{
     text-align: center;
-    margin-top: 30px;
+    margin-top: 60px;
     margin-bottom: 20px;
     font-size: 45px;
     color: black;
 }
 .genr{
-    text-align: center;
-    font-size: 25px; 
+    font-size: 30px; 
     padding-bottom: 20px;
-    font-family: 'Zen Dots', cursive;
+    font-family: 'Zen Dots',cursive;
     color: whitesmoke;
+    margin-left: 45%;
 }
 /* detalles generos */ 
+
+
+
 .h3s{
     text-align: justify;
     font-size: 35px;
     text-decoration: double underline;
+    font-family: 'Zen Dots', cursive;
+    margin-left: 20px;
 }
 .list{
     text-align: center;
     font-size: 25px;
     padding-bottom: 20px;
+    font-family: 'Zen Dots', cursive;
 }
+.ti{
+    font-family: 'Zen Dots', cursive;
+}
+.you{
+    font-size: 25px;
+    text-align: center;
+}
+
+
 /* detalles albums */ 
+
+
 .headalbum{
     margin-top: 8%;
     margin-bottom: 8%;
@@ -169,8 +188,12 @@ header.headerblock{
     text-align: center;
 }
 .adetailimg{
-    height: 60%;
-    width: 60%;
+    height: 30%;
+    width: 30%;
+}
+.artista{
+    font-family: 'Zen Dots', cursive;
+    font-size: 25px;
 }
 /* detalles canciones */ 
 .bodsongs{
