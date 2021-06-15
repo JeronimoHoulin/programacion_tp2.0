@@ -29,15 +29,30 @@ window.addEventListener('load',function(){
 
         /*NOMBRES DE LOS ARTISTAS*/
         let nombresdeart = document.querySelectorAll('.nombreblock.artistas');
-        //console.log(nombresdeart);
         /*FOTOS DE LOS ARTISTAS*/
-        let fotosdeartistas = document.querySelectorAll('.imagenesblock.artistas')
+        let fotosdeartistas = document.querySelectorAll('.imagenesblock.artistas');
 
         for(let i=0; i<nombresdeart.length; i++){
           nombresdeart[i].innerHTML=`${arrayInfo[i].name}`;
           fotosdeartistas[i].src = `${arrayInfo[i].picture_big}`;
         };
 
+
+        /*GUARDO IDS DE ARTISTAS PARA EL DETALLE DE SUS CANCIONES*/
+        let cancion_artista_boton = document.querySelector('.unacancione')
+        let lista_canciones_artistas = [];
+
+        for(let i=0; i<nombresdeart.length; i++){
+          cancion_artista_boton.addEventListener("click", function(e){
+            e.preventDefault();
+            lista_canciones_artistas.push(arrayInfo[i].id); //QUE ESTE CLICK SEA EL DE LA POSICION TAL...
+            //armo un str
+            let cancion_para_storage = JSON.stringify(lista_canciones_artistas);
+            //guardo en mi LS
+            localStorage.setItem('id_canciones', cancion_para_storage);
+          })
+        };
+        console.log(localStorage);
       })
       .catch(function(error){
         console.log("El error fue eeeeste:" + error);
@@ -57,9 +72,9 @@ window.addEventListener('load',function(){
         let arrayInfo1 = data.data;
         //console.log(arrayInfo1[1].name);
 
-        /*TITULOS DE LOS ALBUMS*/
+        /*TITULOS DE LOS CANCIONES*/
         let nombrescanciones = document.querySelectorAll('.nombreblock.canciones');
-        /*FOTOS DE LOS ALBUMS*/
+        /*FOTOS DE LOS CANCIONES*/
         let fotoscanciones = document.querySelectorAll('.imagenesblock.canciones')
 
         for(let i=0; i<nombrescanciones.length; i++){
@@ -142,7 +157,7 @@ window.addEventListener('load',function(){
 
 
 
-    // without QS
+    // Buscador sin QS.. de gede
     /*
     fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/27')
       .then(function(response){
