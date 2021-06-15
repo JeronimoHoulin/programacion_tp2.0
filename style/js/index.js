@@ -39,7 +39,7 @@ window.addEventListener('load',function(){
 
 
         /*GUARDO IDS DE ARTISTAS PARA EL DETALLE DE SUS CANCIONES*/
-        let cancion_artista_boton = document.querySelector('.unacancione')
+        let cancion_artista_boton = document.querySelectorALL('.unacancione')
         let lista_canciones_artistas = [];
 
         for(let i=0; i<nombresdeart.length; i++){
