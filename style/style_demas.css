@@ -36,6 +36,11 @@ header.headerblock{
     margin-left: 10%;
 }
 
+.unacancione{
+    color: #212529;
+    text-decoration: none;
+}
+
 .nombreblock{
     justify-content: flex-start;
 

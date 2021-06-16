@@ -38,21 +38,23 @@ window.addEventListener('load',function(){
         };
 
 
-        /*GUARDO IDS DE ARTISTAS PARA EL DETALLE DE SUS CANCIONES*/
-        let cancion_artista_boton = document.querySelectorALL('.unacancione')
-        let lista_canciones_artistas = [];
+        /*GUARDO IDS DE ARTISTAS PARA SU DETALLE*/
+        let detalle_artista_boton = document.querySelectorAll('.unartistae');
+        let lista_ids_artistas = [];
 
-        for(let i=0; i<nombresdeart.length; i++){
-          cancion_artista_boton.addEventListener("click", function(e){
-            e.preventDefault();
-            lista_canciones_artistas.push(arrayInfo[i].id); //QUE ESTE CLICK SEA EL DE LA POSICION TAL...
+        for (let i=0 ; i < detalle_artista_boton.length; i++) {
+          detalle_artista_boton[i].addEventListener('click', function(){
+            //e.preventDefault();
+            lista_ids_artistas.push(arrayInfo[i].id); //QUE ESTE CLICK SEA EL DE LA POSICION TAL...
             //armo un str
-            let cancion_para_storage = JSON.stringify(lista_canciones_artistas);
+            let ids_para_storage = JSON.stringify(lista_ids_artistas);
             //guardo en mi LS
-            localStorage.setItem('id_canciones', cancion_para_storage);
-          })
-        };
-        console.log(localStorage);
+            localStorage.setItem('id_artista', ids_para_storage);
+            console.log(localStorage);
+          });
+       };
+
+
       })
       .catch(function(error){
         console.log("El error fue eeeeste:" + error);
