@@ -84,6 +84,24 @@ window.addEventListener('load',function(){
           fotoscanciones[i].src = `${arrayInfo1[i].album.cover_big}`;
         };
 
+
+
+        /*GUARDO IDS DE CANCIONES PARA SU DETALLE*/
+        let detalle_cancion_boton = document.querySelectorAll('.unacancione');
+        let lista_ids_canciones = [];
+
+        for (let i=0 ; i < detalle_cancion_boton.length; i++) {
+          detalle_cancion_boton[i].addEventListener('click', function(){
+            //e.preventDefault();
+            lista_ids_canciones.push(arrayInfo1[i].id); //QUE ESTE CLICK SEA EL DE LA POSICION TAL...
+            //armo un str
+            let ids_para_storage = JSON.stringify(lista_ids_canciones);
+            //guardo en mi LS
+            localStorage.setItem('id_cancion', ids_para_storage);
+            console.log(localStorage);
+          });
+      };
+
       })
       .catch(function(error){
         console.log("El error fue eeeeste:" + error);
@@ -113,10 +131,31 @@ window.addEventListener('load',function(){
           fotosdealbums[i].src = `${arrayInfo2[i].cover_big}`;
         };
 
+
+
+        /*GUARDO IDS DE ALBUMS PARA SU DETALLE*/
+        let detalle_album_boton = document.querySelectorAll('.unalbume');
+        let lista_ids_album = [];
+
+        console.log(arrayInfo2[7].id);
+
+        for (let i=0 ; i < detalle_album_boton.length; i++) {
+          detalle_album_boton[i].addEventListener('click', function(){
+            //e.preventDefault();
+            lista_ids_album.push(arrayInfo2[i].id); //QUE ESTE CLICK SEA EL DE LA POSICION TAL...
+            //armo un str
+            let ids_para_storage1 = JSON.stringify(lista_ids_album);
+            //guardo en mi LS
+            localStorage.setItem('id_album', ids_para_storage1);
+          });
+      };
+
       })
       .catch(function(error){
         console.log("El error fue eeeeste:" + error);
       })
+
+      
 
       
 
