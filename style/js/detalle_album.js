@@ -28,7 +28,7 @@ window.addEventListener('load',function(){
         genero_album.innerHTML=`${detalleInfo.title}`;
 
         let detall_genero = document.querySelector('.gener_dett');
-        detall_genero.innerHTML=`${detalleInfo.genres.data[1].name}`;
+        detall_genero.innerHTML=`${detalleInfo.genres.data[0].name}`;
         
         let fecha_pub = document.querySelector('.fechita_det');
         fecha_pub.innerHTML=`${detalleInfo.release_date}`;
