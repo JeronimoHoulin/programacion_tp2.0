@@ -37,29 +37,45 @@ window.addEventListener('load',function(){
         console.log("El error fue eeeeste:" + error);
       })
 
+      //agregar canciones a playlist
 
+      let favoritos = []; 
+    
+      let recuperoStorage = localStorage.getItem('favoritos');
+      
+      if(recuperoStorage != null){
+        favoritos = JSON.parse(recuperoStorage);
+      }
 
+      if(favoritos.includes[id_cancion]){
+        document.querySelector('addto').innerText = "Remove from playlist"; 
+      }
 
+      let addto = document.querySelector('.addto');
 
+      addto.addEventListener("click", function(e){
+        e.preventDefault();
+        
+        if(favoritos.includes(id_cancion)){
+          let idSaco = favoritos.indexOf(id_cancion); 
+          favoritos.splice(idSaco, 1);
+          document.querySelector('.addto').innerText = "Add to your playlist";
+        } else{
+          favoritos.push(id_cancion);
+          document.querySelector('.addto').innerText = "Remove from playlist";
+        }
+        
+        let favStorage = JSON.stringify(favoritos);
+        localStorage.setItem('favoritos', favStorage);
+        console.log(localStorage);
 
+      })
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      //player canciones 
+      
+      let playerCancion = document.querySelector(".playerCancion");
+            playerCancion.innerHTML += `<iframe title="deezer-widget" class="player" src="https://widget.deezer.com/widget/dark/track/${id_cancion}" 
+            width="60%" height="200px" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>`;
 
 
 

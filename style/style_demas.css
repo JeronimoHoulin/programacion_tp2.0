@@ -115,6 +115,15 @@ header.headerblock{
     height: 100%;
     width: 10%;
 }
+.pl{
+    font-size: 35px;
+    font-family: 'Zen Dots', cursive;
+}
+.pwyl{
+    font-size: 25px;
+    font-family: 'Zen Dots', cursive;
+    color: black;
+}
 
 /* css del home */
 .rdoslista{
@@ -146,8 +155,6 @@ header.headerblock{
 }
 /* detalles generos */ 
 
-
-
 .h3s{
     text-align: justify;
     font-size: 35px;
@@ -171,8 +178,6 @@ header.headerblock{
 
 
 /* detalles albums */ 
-
-
 .headalbum{
     margin-top: 8%;
     margin-bottom: 8%;
@@ -186,27 +191,75 @@ header.headerblock{
     text-align: center;
     color: black;
 }
+#tituloalbum{
+    font-family: 'Zen Dots', cursive;
+    font-size: 35px;
+}
+#imgalb{
+    height: 40%;
+    width: 40%; 
+    margin-bottom: 2%;
+}
+.tialb{
+    font-family: 'Zen Dots', cursive;
+    font-size: 25px;
+    color: black; 
+}
+#al{
+    font-family: 'Zen Dots', cursive;
+    font-size: 20px;
+}
+
 /* detalles artistas */
 .art{
-    margin: 3%;
+    margin: 5%;
     color: black;
     text-align: center;
-}
-.adetailimg{
-    height: 30%;
-    width: 30%;
 }
 .artista{
     font-family: 'Zen Dots', cursive;
     font-size: 25px;
 }
+#tituloartista{
+    font-family: 'Zen Dots', cursive;
+    font-size: 35px;
+}
+#imgar{
+    height: 40%;
+    width: 40%; 
+    margin-bottom: 2%;
+}
+#artis{
+    font-family: 'Zen Dots', cursive;
+    font-size: 20px;
+}
+
 /* detalles canciones */ 
 .bodsongs{
     color: black;
     text-align: center;
     margin: 5%;
 }
-.detailimg{
-    height: 30%;
-    width: 30%;
+.can{
+    font-family: 'Zen Dots', cursive;
+    font-size: 25px;
+    color: black;
+}
+.playerCancion{
+    font-family: 'Zen Dots', cursive;
+    font-size: 25px;
+    color: black; 
+}
+#ca{
+    font-family: 'Zen Dots', cursive;
+    font-size: 20px;
+}
+#titulocancion{
+    font-family: 'Zen Dots', cursive;
+    font-size: 35px;
+}
+#imgcan{
+    height: 40%;
+    width: 40%;
+    margin-bottom: 2%;
 }

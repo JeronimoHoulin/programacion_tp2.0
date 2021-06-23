@@ -55,20 +55,19 @@
         </nav>
     </header>
 
-    <!-- fto de la tapa del disco, nombre de cancion, artista y disco, un player para escuchar la cancion, 
-            posibilidad de agregar la cancion a mi paylist y un link para ir a la playlist -->
+    <!-- contenido-->
     <header class="headalbum">Songs</header>
     <div class="bodsongs">
-        <h1 class="h1cancion">Cancion</h1>
-        <img src="./style/imagenes/generic.jpg" class="detallesito_cancion">
+        <h1 class="h1cancion" id="titulocancion">Cancion</h1>
+        <img src="./style/imagenes/generic.jpg" class="detallesito_cancion" id="imgcan">
         <ul type="none">
-            <li class="artista">Artist's name:</li>
-            <li class="nombre_artista">nnn</li>
-            <li class="artista">Album's name:</li>
-            <li class="nombre_album">bbb</li>
-            <li class="ruta_cancion"><a href="#">Listen now!</a></li> <!-- ruta a youtube escuchar la cancion -->
-            <li class="artista">Add to your playlist</li>
-            <li class="artista"><a href="playlist.html"> Go to your playlist</a></li>
+            <li class="can">Artist's name:</li>
+            <li class="nombre_artista" id="ca">nnn</li>
+            <li class="can">Album's name:</li>
+            <li class="nombre_album" id="ca">bbb</li> 
+            <li class="addto"><a href="#" class="can">Add to your playlist</a></li>
+            <li><a href="playlist.html" class="can">Go to your playlist</a></li>
+            <li class="ruta_cancion"><a class="playerCancion"></a></li>
         </ul>
     </div>
         
@@ -82,7 +81,7 @@
     <footer>
         <ul class = "footer_names">
             <li class = "jero">Jerónimo Houlin</li>
-            <li class = "oli">Oli Fodrini</li>
+            <li class = "oli">Olivia Fodrini</li>
         </ul>
     </footer>
 
