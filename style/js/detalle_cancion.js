@@ -52,7 +52,7 @@ window.addEventListener('load',function(){
       }
 
       let addto = document.querySelector('.addto');
-
+      console.log(favoritos.indexOf(id_cancion));
       addto.addEventListener("click", function(e){
         e.preventDefault();
         

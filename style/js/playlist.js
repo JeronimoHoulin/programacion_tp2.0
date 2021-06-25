@@ -1,13 +1,14 @@
-
+window.addEventListener('load', function(){
 //your playlist
 
 let recuperoStorage = localStorage.getItem('favoritos');
 
 let favoritos = JSON.parse(recuperoStorage);
 
-console.log(favoritos);
-
 let listaplay = document.querySelector('.listaplay');
+
+if(favoritos != null){
+console.log(favoritos);
 
 for (let i=0; i<favoritos.length; i++){
     let mostrarFavs = favoritos[i];
@@ -44,8 +45,11 @@ for (let i=0; i<favoritos.length; i++){
         console.log(e);
     })
 
-    if( listaplay.innerHTML = '<p class="pl">Your Playlist is empty</p> <p><a href="./index.html" class="pwyl">Play what you love</a></p>');
+
 };
+} else{
+    listaplay.innerHTML = '<p class="pl">Your Playlist is empty</p> <p><a href="./index.html" class="pwyl">Play what you love</a></p>'
+} 
 
 
 
@@ -62,5 +66,5 @@ for (let i=0; i<favoritos.length; i++){
 
 
 
-
+})
 
