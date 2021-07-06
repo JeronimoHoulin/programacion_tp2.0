@@ -37,6 +37,8 @@ window.addEventListener('load',function(){
         console.log("El error fue eeeeste:" + error);
       })
 
+
+      
       //agregar canciones a playlist
 
       let favoritos = []; 
