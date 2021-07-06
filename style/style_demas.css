@@ -56,9 +56,13 @@ header.headerblock{
     width: 200px;
 }
 
-.listablocky.artistas li a{
+.listablocky.artistas a{
     color: #212529;
     text-decoration: none;
+}
+.unartistae2{
+    border-left: 1px solid #000;
+    padding-left: 5px;
 }
 
 .listitaalbums li a{

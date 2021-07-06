@@ -39,9 +39,18 @@ window.addEventListener('load',function(){
 
 
       /GUARDO IDS DE ARTISTAS PARA SU DETALLE/
+      let detalle_artista_listita = document.querySelectorAll('.listablocky.artistas');
+
+      //Setear el link correspondiente en cada caso de antemano
+      for (let i=0 ; i < detalle_artista_listita.length; i++) {
+        detalle_artista_listita[i].innerHTML = `<a class ="unartistae" href="detalle_artista.html">Details</a>
+                                                <a class ="unartistae2" href="detalle_artista.html?id=${arrayInfo[i].id}">Details (QS)</a>`;
+      }; //TENÍAS QUE TENER CUIDADO CON EL INDICE DE LA LISTA AL PRINCIPIO, AL QUE LE ESTÁS ASIGNANDO EL VALOR!
+
+      //ó enviar data por Local Storage cuando se haga un click
+
       let detalle_artista_boton = document.querySelectorAll('.unartistae');
       let lista_ids_artistas = [];
-
       for (let i=0 ; i < detalle_artista_boton.length; i++) {
         detalle_artista_boton[i].addEventListener('click', function(){   // Para que el evento sea con cualquier botón
           //e.preventDefault();
@@ -52,6 +61,7 @@ window.addEventListener('load',function(){
           localStorage.setItem('id_artista', ids_para_storage);
           console.log(localStorage);
         });
+
      };
 
 
